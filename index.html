@@ -5,81 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="portfolio, bio, personal">
     <meta name="description" content="Эта страница - мое портфолио по HTML и CSS опыту.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <img src="photo.jpg" alt="My Photo" width="300">
-
-    <h1>Букреев Даниил</h1>
-    <p>Я изучаю <em>новый</em> курс <strong>HTML</strong> и <strong>CSS</strong> и желаю всем пройти его!</p>
-    <p>В дальнейшем планирую начать изучение <strong>JavaScript</strong></p>
-
-    <hr>
-
-    <h2>Мои социальные сети:</h2>
-
-    <a href="vk.com" target="_blank">Вконтакте</a>
-    <a href="youtube.com" target="_blank">Youtube</a>
-    <a href="instagram.com" target="_blank">Instagram</a>
-
-    <hr>
-
-    <h2>Мои хобби:</h2>
-
-    <ol>
-        <li>Программирование</li>
-        <li>Пешие походы</li>
-        <li>Чтение книг</li>
-        <li>Инвестирование</li>
-    </ol>
-
-    <hr>
-
-    <h2>Опыт работы:</h2>
-
-    <table>
-        <thead>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Вита</td>
-                <td>Специалист</td>
-                <td>2021-2022</td>
-            </tr>
-            <tr>
-                <td>ВТБ</td>
-                <td>Старший специалист</td>
-                <td>2022-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-        <div>
-            <label for="firstName">Имя</label>
-            <input type="text" id="firstName" placeholder="Введите имя">
-        </div>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <img src="photo.jpg" alt="My Photo" width="300">
+            <div class="label">
+                <h1 class="header-title">Букреев Даниил</h1>
+                <p class="text">Я изучаю <em>новый</em> курс <strong>HTML</strong> и <strong>CSS</strong> и желаю всем пройти его!</p>
+                <p class="text">В дальнейшем планирую начать изучение <strong>JavaScript</strong></p>
+                <h2 class="title">Мои социальные сети:</h2>
     
-        <div>
-            <label for="email">Имя</label>
-            <input type="email" id="email" placeholder="Введите e-mail">
-        </div>
+                <a href="https://vk.com" target="_blank" class="link">Вконтакте</a>
+                <a href="https://youtube.com" target="_blank" class="link">Youtube</a>
+                <a href="https://instagram.com" target="_blank" class="link">Instagram</a>
+            </div>
+        </header>
     
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" placeholder="Введите сообщение..." cols="30" rows="5"></textarea>
-        </div>
+        <!-- BODY -->
+        <body class="body" id="body">
+            <!-- HOBBY -->
+            <div class="card-hobby">
+                <h2 class="title">Мои хобби:</h2>
     
-        <button type="submit">Отправить</button>
-    </form>
+                <ol class="list">
+                    <li>Программирование</li>
+                    <li>Пешие походы</li>
+                    <li>Чтение книг</li>
+                    <li>Инвестирование</li>
+                </ol>
+            </div>
+        
+            <!-- JOB -->
+            <div class="card-job">
+                <h2 class="title">Опыт работы:</h2>
+                <table class="table">
+                    <thead>
+                        <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Вита</td>
+                            <td>Специалист</td>
+                            <td>2021-2022</td>
+                        </tr>
+                        <tr>
+                            <td>ВТБ</td>
+                            <td>Старший специалист</td>
+                            <td>2022-сейчас</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+    
+        <!-- FOOTER -->
+        <footer class="footer" id="footer">
+            <h2 class="title">Связаться со мной</h2>
+            <form class="form">
+                <div>
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" placeholder="Введите имя">
+                </div>
+            
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Введите e-mail">
+                </div>
+            
+                <div class="textarea">
+                    <label for="message">Ваше сообщение:</label>
+                    <br>
+                    <textarea id="message" placeholder="Введите сообщение..." cols="30" rows="5"></textarea>
+                </div>
+            
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </footer>
+    </div>
 
 </body>
 </html>

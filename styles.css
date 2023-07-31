@@ -1,0 +1,190 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+    color:darkslateblue;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.header {
+    padding: 20px 20px;
+    margin: 0 auto 20px auto;
+}
+
+
+
+.header img {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0 50px 0 0;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000;
+}
+
+.header-title {
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(46, 39, 89);
+    text-align: left;
+}
+
+.label {
+    display: inline-block;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color:rgb(46, 39, 89);
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .header img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .label {
+        display: block;
+        text-align: center;
+    }
+
+    .header-title, .text {
+        text-align: center;
+    }
+
+    .container {
+        width: 500px;
+    }
+}
+
+
+
+
+.list li:nth-child(even) {
+    font-weight: 700;
+}
+
+.list li:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.card-hobby {
+    background-color: cadetblue;
+    padding: 20px 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0 0 20px 0;
+}
+
+.card-job {
+    background-color: khaki;
+    padding: 20px 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0 0 20px 0;
+}
+
+.footer {
+    padding: 20px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+.table {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    background-color: rgb(202, 188, 70);
+}
+
+.table th, .table td:not(:last-child) {
+    padding: 0 0 8px 0;
+}
+
+.table td {
+    cursor: pointer;
+}
+
+.table td:hover {
+    background-color:bisque;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(149, 149, 149);
+    transition: .3s ease-in;
+}
+
+.link:visited {
+    color: rgb(168, 155, 255);
+}
+
+.link:active {
+    color: #000;
+}
+
+.link:hover {
+    color: #000;
+}
+
+.form {
+    width: 100%;
+}
+
+.form div {
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.form>div:not(:last-of-type) {
+    width: 45%;
+}
+
+.form>div:first-of-type {
+    margin: 0 5% 0 0;
+}
+
+.form input, .form .textarea textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 0;
+
+    border: none;
+    border-bottom: 1px grey solid;
+}
+
+.form .textarea {
+    display: block;
+}
+
+.button {
+    background-color: darkslateblue;
+    color: #fff;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: darkslateblue;
+}
